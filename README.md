@@ -1,24 +1,23 @@
-# README
+# Post It Notes Board API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TODO: Write a project description
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+TODO: Describe the installation process
 
-* System dependencies
+## Usage
 
-* Configuration
+TODO: Write usage instructions
 
-* Database creation
+## History
 
-* Database initialization
+TODO: Write history
 
-* How to run the test suite
+## Credits
 
-* Services (job queues, cache servers, search engines, etc.)
+TODO: Write credits
 
-* Deployment instructions
+## License
 
-* ...
+TODO: Write license
