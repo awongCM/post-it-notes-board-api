@@ -28,6 +28,16 @@ gem 'rack-cors', :require => 'rack/cors'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  # Add respec tools here
+  gem 'rspec-rails'
+
+  # And other respec-related test tools for API
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
+  gem 'faker'
+  gem 'database_cleaner'
+
 end
 
 group :development do
