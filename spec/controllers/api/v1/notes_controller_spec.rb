@@ -9,7 +9,7 @@ RSpec.describe 'API::V1:NotesController', :type => :api do
     let(:note_id) {notes.first.id}
 
     describe 'GET v1/notes' do
-      before {get '/todos'}
+      before {get '/notes'}
 
       it 'returns notes' do
         expect(json).not_to be_empty

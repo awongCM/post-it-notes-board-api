@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :note do
-    title { Faker::Lorem.word }
-    content { Faker::Content.word }
-    color { Faker::yellow.word }
+    title { Faker::Lorem.sentence }
+    content { Faker::Lorem.paragraph }
+    color { Faker::Lorem.word }
   end
 end
