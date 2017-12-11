@@ -28,7 +28,9 @@ module API::V1
     private
 
     def note_params
-      params.require(:note).permit(:title, :body)
+      # why??
+      # params.require(:note).permit(:title, :body)
+      params.permit(:title, :content, :color)
     end
 
   end
