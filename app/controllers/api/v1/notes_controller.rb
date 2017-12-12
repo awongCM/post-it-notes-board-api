@@ -1,7 +1,7 @@
 module API::V1
   class NotesController < ApplicationController
     def index
-      @notes = Note.all
+      @notes = Note.order('created_at DESC')
       render json: @notes
     end
 

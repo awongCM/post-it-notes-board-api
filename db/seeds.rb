@@ -16,7 +16,7 @@ notes = Note.create(
     {
       title: "LiveChat Configuration Documentation",
       content: "Document live chat configuration settings",
-      color: "blue"
+      color: "orange"
     },
     {
       title: "Dropdown Menus",
