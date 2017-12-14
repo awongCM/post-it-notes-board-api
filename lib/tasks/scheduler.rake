@@ -17,7 +17,7 @@ task :reset_seeds_db => :environment do
   end
 
   puts "Do db schema load and re-seed..."
-  sh "db:schema:load"
-  sh "db:seed"
+  sh "rake db:schema:load"
+  sh "rake db:seed"
   puts "done."
 end
