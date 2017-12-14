@@ -30,12 +30,15 @@ module PostItNotesBoardApi
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
     
-    # Enable CORS
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins 'http://localhost:3000'
-        resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
+    # Enable CORS, in dev mode
+    if Rails.env.development?
+      config.middleware.insert_before 0, Rack::Cors do
+        allow do
+          origins 'http://localhost:3000'
+          resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
+        end
       end
     end
+    
   end
 end
