@@ -25,8 +25,8 @@ desc "Resetting DB"
 
 
 task :purge_reseed_db => :environment do
-  puts "Purge tables.."
-  sh "rake db:purge"
+  puts "Empty the table.."
+  Note.delete_all
   puts "Reseed db.."
   sh "rake db:seed"
   puts ".. done"
