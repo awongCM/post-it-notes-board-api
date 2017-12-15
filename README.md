@@ -1,23 +1,26 @@
 # Post It Notes Board API
 
-TODO: Write a project description
+My actual Restful API Server implementation in Rails.  Solely used for my Post It Notes Board React app.
 
-## Installation
+## Ingredients used
+1. Rails 5
+2. JSON
+3. API endpoints
+4. Heroku for cloud deployment
 
-TODO: Describe the installation process
+## Testing tools included
+1. Faker
+2. Factory Girls
+3. Shoulda Matchers
+4. Faker
 
-## Usage
-
-TODO: Write usage instructions
-
-## History
-
-TODO: Write history
+## Todos
+1. Secure Rails API
+2. Rspec Testing
+3. Rake Tasks for Heroku Scheduler
 
 ## Credits
-
-TODO: Write credits
+All credit goes to this [Rails](https://www.sitepoint.com/react-rails-5-1/) Tutorial.
 
 ## License
-
-TODO: Write license
+This project is licensed under the MIT License - see the LICENSE.md file for details
