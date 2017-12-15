@@ -23,4 +23,4 @@ My actual Restful API Server implementation in Rails.  Solely used for my Post I
 All credit goes to this [Rails](https://www.sitepoint.com/react-rails-5-1/) Tutorial.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/awongCM/post-it-notes-board-api/blob/master/LICENSE) file for details
