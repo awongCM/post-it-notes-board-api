@@ -4,7 +4,7 @@ task :purge_reseed_db => :environment do
   puts "Empty the table.."
   Note.delete_all
 
-  puts "Reset primary key sequences"
+  puts "Reset primary key sequences.."
   # For SQLlite
   # update_seq_sql = "update sqlite_sequence set seq = 0 where name = 'notes';"
   # ActiveRecord::Base.connection.execute(update_seq_sql)
