@@ -35,10 +35,10 @@ group :development, :test do
   gem 'sqlite3'
 
   # Add respec tools here
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.7.2'
 
   # And other respec-related test tools for API
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.9.0'
   gem 'shoulda-matchers'
   gem 'faker'
   gem 'database_cleaner'
