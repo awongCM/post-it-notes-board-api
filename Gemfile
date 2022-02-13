@@ -7,10 +7,10 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.4'
+gem 'rails', '~> 5.2.6', '>= 5.2.6.2'
 
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 4.3', '>= 4.3.11'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
@@ -35,10 +35,10 @@ group :development, :test do
   gem 'sqlite3'
 
   # Add respec tools here
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.7.2'
 
   # And other respec-related test tools for API
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.9.0'
   gem 'shoulda-matchers'
   gem 'faker'
   gem 'database_cleaner'
