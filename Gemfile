@@ -7,13 +7,13 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.4'
+gem 'rails', '~> 5.2.0'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 
 # Bug fix for Nokogiri version updates
-gem 'loofah', '~>2.19.1'
+gem 'loofah', '~> 2.20.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
@@ -38,7 +38,7 @@ group :development, :test do
   gem 'sqlite3', '1.3.13'
 
   # Add respec tools here
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 5.0.0'
 
   # And other respec-related test tools for API
   gem 'factory_girl_rails'
