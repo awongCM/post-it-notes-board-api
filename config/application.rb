@@ -39,8 +39,7 @@ module PostItNotesBoardApi
       end
 
       allow do
-        # origins 'https://post-it-notes-board-react.herokuapp.com'
-        origins 'https://post-it-notes-board-api.onrender.com'
+        origins 'https://post-it-notes-board-react.onrender.com'
         resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
       end
     end
