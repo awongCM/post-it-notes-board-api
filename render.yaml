@@ -11,9 +11,15 @@ services:
         fromDatabase:          
           name: post-it-notes-board-db          
           property: connectionString
+      - key: REDIS_URL # this must match the name of the environment variable used in production.rb
+        fromService:
+          type: redis
+          name: post-it-notes-board-api-redis
+          property: connectionString
   - name: post-it-notes-board-api-redis
     type: redis
     ipAllowList: [] # only allow connections from services in this Render accoun
+    maxmemoryPolicy: allkeys-lfu
 databases:
   - name: post-it-notes-board-db
     ipAllowList: [] # only allow connections from services in this Render account
