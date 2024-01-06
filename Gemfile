@@ -19,6 +19,8 @@ gem 'loofah', '~>2.19.1'
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 3.0'
+gem 'redis-store', '>= 1.4', '< 2'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
