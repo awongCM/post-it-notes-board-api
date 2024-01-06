@@ -186,7 +186,6 @@ DEPENDENCIES
   puma (~> 3.7)
   rack-cors
   rails (~> 5.1.4)
-  redis (~> 4.0)
   redis-rails
   rspec-rails
   shoulda-matchers
