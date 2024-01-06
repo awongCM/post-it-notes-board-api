@@ -30,19 +30,5 @@ module PostItNotesBoardApi
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
     
-    # TODOS - bad practice, sorry!!
-    # Enable CORS in dev and prod
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins 'http://localhost:3000'
-        resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
-      end
-
-      allow do
-        origins 'https://post-it-notes-board-react.onrender.com'
-        resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
-      end
-    end
-  
   end
 end
