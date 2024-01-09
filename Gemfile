@@ -10,7 +10,7 @@ end
 gem 'rails', '~> 5.1.4'
 
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 5.6', '>= 5.6.8'
 
 # Bug fix for Nokogiri version updates
 gem 'loofah', '~>2.19.1'
