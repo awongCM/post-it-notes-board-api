@@ -13,7 +13,7 @@ gem 'rails', '~> 5.1.4'
 gem 'puma', '~> 3.7'
 
 # Bug fix for Nokogiri version updates
-gem 'loofah', '~>2.19.1'
+gem 'loofah', '~> 2.20.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
