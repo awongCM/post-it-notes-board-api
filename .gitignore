@@ -22,3 +22,5 @@ _ignore.txt
 
 # Ignore encrypted secrets key file.
 config/secrets.yml.key
+
+secrets.txt

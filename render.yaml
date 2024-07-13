@@ -7,9 +7,9 @@ services:
     envVars:
       - key: SECRET_KEY_BASE
         generateValue: true
-      - key: DATABASE_URL        
-        fromDatabase:          
-          name: post-it-notes-board-db          
+      - key: DATABASE_URL
+        fromDatabase:
+          name: post-it-notes-board-db
           property: connectionString
       - key: REDIS_URL # this must match the name of the environment variable used in production.rb
         fromService:
@@ -20,6 +20,6 @@ services:
     type: redis
     ipAllowList: [] # only allow connections from services in this Render accoun
     maxmemoryPolicy: allkeys-lfu
-databases:
-  - name: post-it-notes-board-db
-    ipAllowList: [] # only allow connections from services in this Render account
+# databases:
+#   - name: post-it-notes-board-db
+#     ipAllowList: [] # only allow connections from services in this Render account
