@@ -7,13 +7,13 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.4'
+gem 'rails', '~> 7.1.0'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 
 # Bug fix for Nokogiri version updates
-gem 'loofah', '~>2.19.1'
+gem 'loofah', '~> 2.20.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
@@ -28,7 +28,7 @@ gem 'redis-rails'
 # gem 'capistrano-rails', group: :development
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-gem 'rack-cors', :require => 'rack/cors'
+gem 'rack-cors', '>= 2.0.2', :require => 'rack/cors'
 
 group :production do
   gem 'pg'
@@ -41,13 +41,13 @@ group :development, :test do
   gem 'pg'
 
   # Add respec tools here
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 5.0.0'
 
   # And other respec-related test tools for API
   gem 'factory_girl_rails'
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', '>= 5.0.0'
   gem 'faker'
-  gem 'database_cleaner'
+  gem 'database_cleaner', '>= 2.1.0'
 
 end
 
