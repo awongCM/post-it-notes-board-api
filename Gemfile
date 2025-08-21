@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.4'
+gem 'rails', '~> 7.1.5', '>= 7.1.5.2'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
@@ -47,7 +47,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
   gem 'faker'
-  gem 'database_cleaner'
+  gem 'database_cleaner', '>= 2.1.0'
 
 end
 
