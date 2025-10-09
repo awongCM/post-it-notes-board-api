@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.4'
+gem 'rails', '~> 5.2.0'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
@@ -28,7 +28,7 @@ gem 'redis-rails'
 # gem 'capistrano-rails', group: :development
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-gem 'rack-cors', :require => 'rack/cors'
+gem 'rack-cors', '>= 2.0.2', :require => 'rack/cors'
 
 group :production do
   gem 'pg'
@@ -41,7 +41,7 @@ group :development, :test do
   gem 'pg'
 
   # Add respec tools here
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 5.0.0'
 
   # And other respec-related test tools for API
   gem 'factory_girl_rails'
