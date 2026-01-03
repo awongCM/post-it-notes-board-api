@@ -24,3 +24,5 @@ _ignore.txt
 config/secrets.yml.key
 
 secrets.txt
+.env
+.env.*
