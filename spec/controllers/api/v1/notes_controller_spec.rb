@@ -9,7 +9,7 @@ RSpec.describe 'API::V1:NotesController', :type => :api do
     let(:note_id) {notes.first.id}
 
     describe 'GET v1/notes' do
-      before {get '/notes'}
+      before {get '/v1/notes'}
 
       it 'returns notes' do
         expect(json).not_to be_empty
@@ -23,7 +23,7 @@ RSpec.describe 'API::V1:NotesController', :type => :api do
     end
 
     describe 'GET v1/notes/:id' do
-      before { get "/notes/#{todo_id}" }
+      before { get "/v1/notes/#{note_id}" }
       
       context 'when the note exists' do
         it 'returns the todo' do
@@ -53,7 +53,7 @@ RSpec.describe 'API::V1:NotesController', :type => :api do
       let(:valid_attributes) { { title: 'Learn Rails API', content: 'All the Rails API recipes you could ask for', color:'yellow' } }
       
       context 'when the request is valid' do
-        before { post '/notes', params: valid_attributes }
+        before { post '/v1/notes', params: valid_attributes }
   
         it 'creates a note' do
           expect(json['title']).to eq('Learn Elm')
@@ -83,7 +83,7 @@ RSpec.describe 'API::V1:NotesController', :type => :api do
       let(:valid_attributes) { { title: 'Shopping' } }
       
       context 'when the record exists' do
-        before { put "/notes/#{note_id}", params: valid_attributes }
+        before { put "/v1/notes/#{note_id}", params: valid_attributes }
   
         it 'updates the record' do
           expect(response.body).to be_empty
@@ -96,7 +96,7 @@ RSpec.describe 'API::V1:NotesController', :type => :api do
     end
 
     describe 'DELETE v1/notes/:id' do
-      before { delete "/notes/#{note_id}" }
+      before { delete "/v1/notes/#{note_id}" }
       
       it 'returns status code 204' do
         expect(response).to have_http_status(204)
