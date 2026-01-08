@@ -41,7 +41,7 @@ group :development, :test do
   gem 'pg'
 
   # Add respec tools here
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
 
   # And other respec-related test tools for API
   gem 'factory_girl_rails'
