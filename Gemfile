@@ -7,10 +7,10 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 7.1.0'
+gem 'rails', '~> 8.0.0'
 
 # Use Puma as the app server
-gem 'puma', '~> 3.12'
+gem 'puma', '~> 6.0'
 
 # Bug fix for Nokogiri version updates
 
@@ -43,7 +43,7 @@ group :development, :test do
   gem 'rspec-rails'
 
   # And other respec-related test tools for API
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'shoulda-matchers'
   gem 'faker'
   gem 'database_cleaner'
