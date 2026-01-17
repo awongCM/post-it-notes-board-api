@@ -193,9 +193,9 @@ git push  # Triggers Render build
 
 ## Success Criteria
 
-- [ ] All RSpec tests pass (`bundle exec rspec spec/`)
-- [ ] No deprecation warnings in test logs
-- [ ] React frontend still fetches/creates/updates notes
+- [x] All RSpec tests pass (`bundle exec rspec spec/`)
+- [x] No deprecation warnings in test logs
+- [x] React frontend still fetches/creates/updates notes
 - [ ] CORS works for both localhost:3000 (dev) and production URL
 - [ ] Render deployment completes without errors
 - [ ] Monitoring shows no increase in error rates post-deployment
